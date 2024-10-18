@@ -5,7 +5,7 @@
 Choose between ChatGPT, Microsoft Copilot and Google Gemini.
 
 ### Keyboard shortcut:
-Use Windows + Shift + C to open, like the old Copilot sidebar.
+Use Ctrl + Windows + C to open / close.
 
 ### Minimise to tray:
 Application minimises to tray for faster loading.

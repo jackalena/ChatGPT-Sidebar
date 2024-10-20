@@ -1,0 +1,564 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<Product Id="*" Name="ChatGPT Sidebar" Language="1033" Version="1.0.0.0" Manufacturer="Jack Ishmael" UpgradeCode="2b9afba8-4abc-451b-ad34-60d210ce6f83">
+			<Package Compressed="yes" InstallScope="perUser" />
+		</Product>
+	</Fragment>	
+	<Fragment>
+		<DirectoryRef Id="ResourcesFolder">
+			<Directory Id="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Name="Release\net8.0-windows7.0" />
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<ComponentGroup Id="ResourcesComponentGroup">
+			<Component Id="cmp_kdIWZBI13gGe99GlHAoNoIwzcI" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="fa51c1d9-265e-42a3-a2b8-350186afdad7">
+				<File Id="filszzhZ79MuCsB8JijLKh0QAylrTs" KeyPath="yes" Source="SourceDir\ChatGPTSidebar.deps.json" />
+			</Component>
+			<Component Id="cmpWndNzmzbEyo2hmnVYg7dBUbJmfw" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="dc818cf5-16d3-4d94-9b55-b2e74600351e">
+				<File Id="filnV1HR8G_46ZRUuMAoe6s_VGvUiQ" KeyPath="yes" Source="SourceDir\ChatGPTSidebar.dll" />
+			</Component>
+			<Component Id="cmpTDa40SYzA0U6n88YlS35xIMlmeI" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="fe525c7c-8625-4281-aa37-c8241c3abe08">
+				<File Id="filtXj3aizqV.DcfVYIl3nhQROMXWE" KeyPath="yes" Source="SourceDir\ChatGPTSidebar.exe" />
+			</Component>
+			<Component Id="cmpZk6pB9hA5SihK1xp8aaWP8CFo70" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="8ef77775-6fa4-4b43-849f-c70fc853a292">
+				<File Id="filr6DbOdBx0G3FwgPZjMdVq0nWVgQ" KeyPath="yes" Source="SourceDir\ChatGPTSidebar.pdb" />
+			</Component>
+			<Component Id="cmpgTOY8gX9DV10hkgjXCIJ4TUGGhs" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="900edcb1-0142-40f9-90bd-989cc819ef3d">
+				<File Id="filQracsMdoSLoMZ_2bm0bEVeDXBBg" KeyPath="yes" Source="SourceDir\ChatGPTSidebar.runtimeconfig.json" />
+			</Component>
+			<Component Id="cmpIfWEOPaeVz_y_xvaaOndFZKaf4k" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="49118836-63a3-4d59-8687-d53e2ec79e20">
+				<File Id="filyYVshjCNwVY_IvVhIKAT4LkfMU8" KeyPath="yes" Source="SourceDir\Hardcodet.NotifyIcon.Wpf.dll" />
+			</Component>
+			<Component Id="cmpVQZoTNLazZCbw_spM4qHQYQC.9k" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="470192ab-6c93-4c55-9c6d-100a0508dd16">
+				<Class Id="{17D95329-7A22-3235-BF96-BC82693E4375}" Context="InprocServer32" Description="Microsoft.Web.WebView2.Core.WebView2RuntimeNotFoundException" ThreadingModel="both" ForeignServer="mscoree.dll">
+					<ProgId Id="Microsoft.Web.WebView2.Core.WebView2RuntimeNotFoundException" Description="Microsoft.Web.WebView2.Core.WebView2RuntimeNotFoundException" />
+				</Class>
+				<Class Id="{5587A54E-242B-3589-808B-F46C64F94834}" Context="InprocServer32" Description="Microsoft.Web.WebView2.Core.HostObjectHelper" ThreadingModel="both" ForeignServer="mscoree.dll">
+					<ProgId Id="Microsoft.Web.WebView2.Core.HostObjectHelper" Description="Microsoft.Web.WebView2.Core.HostObjectHelper" />
+				</Class>
+				<File Id="fili3RMWnaRy0FIakcE.PuhPZIWxY4" KeyPath="yes" Source="SourceDir\Microsoft.Web.WebView2.Core.dll" />
+				<ProgId Id="Record" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.WebView2RuntimeNotFoundException" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32" Name="Class" Value="Microsoft.Web.WebView2.Core.WebView2RuntimeNotFoundException" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{17D95329-7A22-3235-BF96-BC82693E4375}\InprocServer32" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.HostObjectHelper" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32" Name="Class" Value="Microsoft.Web.WebView2.Core.HostObjectHelper" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="CLSID\{5587A54E-242B-3589-808B-F46C64F94834}\InprocServer32" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{02E8ADAC-B817-35BD-A2CE-595147DF10AD}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2HostResourceAccessKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{02E8ADAC-B817-35BD-A2CE-595147DF10AD}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{02E8ADAC-B817-35BD-A2CE-595147DF10AD}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{02E8ADAC-B817-35BD-A2CE-595147DF10AD}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{052BFA05-B889-3CE1-AD9D-8B176B997B23}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PRINT_DUPLEX" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{052BFA05-B889-3CE1-AD9D-8B176B997B23}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{052BFA05-B889-3CE1-AD9D-8B176B997B23}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{052BFA05-B889-3CE1-AD9D-8B176B997B23}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{061B93A1-1A8A-393F-87FA-656BF0BFF9B9}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{061B93A1-1A8A-393F-87FA-656BF0BFF9B9}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{061B93A1-1A8A-393F-87FA-656BF0BFF9B9}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{061B93A1-1A8A-393F-87FA-656BF0BFF9B9}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{06699A48-E62B-33F5-B112-F36386CE19ED}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2FileSystemHandlePermission" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{06699A48-E62B-33F5-B112-F36386CE19ED}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{06699A48-E62B-33F5-B112-F36386CE19ED}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{06699A48-E62B-33F5-B112-F36386CE19ED}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0AFD2210-958D-3947-8B49-8C4523E55AEE}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PrintMediaSize" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0AFD2210-958D-3947-8B49-8C4523E55AEE}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0AFD2210-958D-3947-8B49-8C4523E55AEE}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0AFD2210-958D-3947-8B49-8C4523E55AEE}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0B50BE48-DC50-3840-9427-49E9B9202904}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2NonClientRegionKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0B50BE48-DC50-3840-9427-49E9B9202904}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0B50BE48-DC50-3840-9427-49E9B9202904}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0B50BE48-DC50-3840-9427-49E9B9202904}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0C67841A-9B71-3F5E-9471-6458C89C8196}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PRINT_MEDIA_SIZE" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0C67841A-9B71-3F5E-9471-6458C89C8196}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0C67841A-9B71-3F5E-9471-6458C89C8196}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0C67841A-9B71-3F5E-9471-6458C89C8196}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0D21C461-C6EC-367B-BCEB-F8D44AA2CE50}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PrintOrientation" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0D21C461-C6EC-367B-BCEB-F8D44AA2CE50}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0D21C461-C6EC-367B-BCEB-F8D44AA2CE50}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0D21C461-C6EC-367B-BCEB-F8D44AA2CE50}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0E4683F4-28D9-3318-87B3-84B906B98AD9}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PrintCollation" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0E4683F4-28D9-3318-87B3-84B906B98AD9}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0E4683F4-28D9-3318-87B3-84B906B98AD9}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{0E4683F4-28D9-3318-87B3-84B906B98AD9}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1154607E-8CB8-3422-A044-3512BD3CFF46}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2CapturePreviewImageFormat" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1154607E-8CB8-3422-A044-3512BD3CFF46}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1154607E-8CB8-3422-A044-3512BD3CFF46}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1154607E-8CB8-3422-A044-3512BD3CFF46}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1253F937-87EA-3FE9-8F2D-9D6BA700CC0F}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorAction" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1253F937-87EA-3FE9-8F2D-9D6BA700CC0F}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1253F937-87EA-3FE9-8F2D-9D6BA700CC0F}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1253F937-87EA-3FE9-8F2D-9D6BA700CC0F}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1493BC74-BEE9-32C9-B1F3-F51A870E2BC7}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PRINT_DIALOG_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1493BC74-BEE9-32C9-B1F3-F51A870E2BC7}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1493BC74-BEE9-32C9-B1F3-F51A870E2BC7}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1493BC74-BEE9-32C9-B1F3-F51A870E2BC7}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{14CA2189-7284-3488-83F4-39EE0FF55BCB}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_TRACKING_PREVENTION_LEVEL" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{14CA2189-7284-3488-83F4-39EE0FF55BCB}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{14CA2189-7284-3488-83F4-39EE0FF55BCB}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{14CA2189-7284-3488-83F4-39EE0FF55BCB}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{19F93097-3C9E-3A31-9910-8C39058ED427}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PrintDialogKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{19F93097-3C9E-3A31-9910-8C39058ED427}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{19F93097-3C9E-3A31-9910-8C39058ED427}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{19F93097-3C9E-3A31-9910-8C39058ED427}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A1D17B6-DAAA-3D01-A242-E8A5B97A3E47}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PRINT_ORIENTATION" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A1D17B6-DAAA-3D01-A242-E8A5B97A3E47}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A1D17B6-DAAA-3D01-A242-E8A5B97A3E47}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A1D17B6-DAAA-3D01-A242-E8A5B97A3E47}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A8423F2-D646-3802-92F3-BA1B1A916E2D}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.EventRegistrationToken" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A8423F2-D646-3802-92F3-BA1B1A916E2D}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A8423F2-D646-3802-92F3-BA1B1A916E2D}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1A8423F2-D646-3802-92F3-BA1B1A916E2D}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1D5E2F0F-F419-31F1-971E-25F31D77E5FB}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2WebErrorStatus" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1D5E2F0F-F419-31F1-971E-25F31D77E5FB}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1D5E2F0F-F419-31F1-971E-25F31D77E5FB}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1D5E2F0F-F419-31F1-971E-25F31D77E5FB}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1EA6FE5C-8ADF-3432-9735-CBF259367DC7}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PERMISSION_STATE" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1EA6FE5C-8ADF-3432-9735-CBF259367DC7}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1EA6FE5C-8ADF-3432-9735-CBF259367DC7}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{1EA6FE5C-8ADF-3432-9735-CBF259367DC7}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{213AEBFB-4AFB-3CC3-BC24-0CD0B013FBC6}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_CLIENT_CERTIFICATE_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{213AEBFB-4AFB-3CC3-BC24-0CD0B013FBC6}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{213AEBFB-4AFB-3CC3-BC24-0CD0B013FBC6}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{213AEBFB-4AFB-3CC3-BC24-0CD0B013FBC6}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{222A7A0C-C4E3-3378-8471-ED17D33918F5}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestSourceKinds" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{222A7A0C-C4E3-3378-8471-ED17D33918F5}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{222A7A0C-C4E3-3378-8471-ED17D33918F5}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{222A7A0C-C4E3-3378-8471-ED17D33918F5}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2319CB3C-C330-39A8-950D-70C209E38800}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_MOUSE_EVENT_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2319CB3C-C330-39A8-950D-70C209E38800}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2319CB3C-C330-39A8-950D-70C209E38800}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2319CB3C-C330-39A8-950D-70C209E38800}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{23FA30C2-A7D0-303D-AAA3-23CBEDB46D2C}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_SAVE_AS_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{23FA30C2-A7D0-303D-AAA3-23CBEDB46D2C}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{23FA30C2-A7D0-303D-AAA3-23CBEDB46D2C}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{23FA30C2-A7D0-303D-AAA3-23CBEDB46D2C}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{253D0DAC-00FA-3580-A90B-EABD7BFF010B}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_CHANNEL_SEARCH_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{253D0DAC-00FA-3580-A90B-EABD7BFF010B}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{253D0DAC-00FA-3580-A90B-EABD7BFF010B}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{253D0DAC-00FA-3580-A90B-EABD7BFF010B}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{254A0FC6-8F0B-3705-9BA7-3E1E9D3B628D}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusReason" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{254A0FC6-8F0B-3705-9BA7-3E1E9D3B628D}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{254A0FC6-8F0B-3705-9BA7-3E1E9D3B628D}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{254A0FC6-8F0B-3705-9BA7-3E1E9D3B628D}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{27341520-91FF-3BE2-82A4-0BE0525555EB}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{27341520-91FF-3BE2-82A4-0BE0525555EB}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{27341520-91FF-3BE2-82A4-0BE0525555EB}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{27341520-91FF-3BE2-82A4-0BE0525555EB}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{28991349-DA41-30D2-835B-F8AF106CA7F2}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PRINT_STATUS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{28991349-DA41-30D2-835B-F8AF106CA7F2}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{28991349-DA41-30D2-835B-F8AF106CA7F2}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{28991349-DA41-30D2-835B-F8AF106CA7F2}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2BEA0373-D929-39B5-AD63-C815A4FD4CC5}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2BEA0373-D929-39B5-AD63-C815A4FD4CC5}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2BEA0373-D929-39B5-AD63-C815A4FD4CC5}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2BEA0373-D929-39B5-AD63-C815A4FD4CC5}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2CE9AF98-DCDF-39CD-A633-6C77C0D55428}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_FILE_SYSTEM_HANDLE_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2CE9AF98-DCDF-39CD-A633-6C77C0D55428}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2CE9AF98-DCDF-39CD-A633-6C77C0D55428}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2CE9AF98-DCDF-39CD-A633-6C77C0D55428}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2D12B0DB-34D9-392D-A7E1-4437AFB44766}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2SaveAsUIResult" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2D12B0DB-34D9-392D-A7E1-4437AFB44766}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2D12B0DB-34D9-392D-A7E1-4437AFB44766}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{2D12B0DB-34D9-392D-A7E1-4437AFB44766}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{304DF19C-B523-3BD0-9525-CDDE84479CD2}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_NAVIGATION_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{304DF19C-B523-3BD0-9525-CDDE84479CD2}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{304DF19C-B523-3BD0-9525-CDDE84479CD2}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{304DF19C-B523-3BD0-9525-CDDE84479CD2}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{31386B94-C45D-34B7-AEDE-B9DE1E9D999E}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{31386B94-C45D-34B7-AEDE-B9DE1E9D999E}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{31386B94-C45D-34B7-AEDE-B9DE1E9D999E}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{31386B94-C45D-34B7-AEDE-B9DE1E9D999E}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{32BAB4ED-8611-3E34-88AF-88991E1DF507}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_KEY_EVENT_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{32BAB4ED-8611-3E34-88AF-88991E1DF507}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{32BAB4ED-8611-3E34-88AF-88991E1DF507}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{32BAB4ED-8611-3E34-88AF-88991E1DF507}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3319363B-6D92-395D-93EC-95F849D3DCEA}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_WEB_ERROR_STATUS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3319363B-6D92-395D-93EC-95F849D3DCEA}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3319363B-6D92-395D-93EC-95F849D3DCEA}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3319363B-6D92-395D-93EC-95F849D3DCEA}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{332A5F09-6F78-3A1D-A7E7-4660CD949480}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2NavigationKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{332A5F09-6F78-3A1D-A7E7-4660CD949480}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{332A5F09-6F78-3A1D-A7E7-4660CD949480}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{332A5F09-6F78-3A1D-A7E7-4660CD949480}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{33ED7711-6C44-32C3-B5F4-BF37F44FE69E}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_FRAME_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{33ED7711-6C44-32C3-B5F4-BF37F44FE69E}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{33ED7711-6C44-32C3-B5F4-BF37F44FE69E}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{33ED7711-6C44-32C3-B5F4-BF37F44FE69E}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3AB6A3DF-5AA0-3DCE-9235-83E46C7929D9}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2MouseEventKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3AB6A3DF-5AA0-3DCE-9235-83E46C7929D9}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3AB6A3DF-5AA0-3DCE-9235-83E46C7929D9}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3AB6A3DF-5AA0-3DCE-9235-83E46C7929D9}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3F9716FC-3CB2-3B6B-8AC4-8F8F036B25D3}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PHYSICAL_KEY_STATUS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3F9716FC-3CB2-3B6B-8AC4-8F8F036B25D3}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3F9716FC-3CB2-3B6B-8AC4-8F8F036B25D3}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{3F9716FC-3CB2-3B6B-8AC4-8F8F036B25D3}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4168C9CF-C083-3FCD-AD43-FBF6C61F9052}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_MOVE_FOCUS_REASON" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4168C9CF-C083-3FCD-AD43-FBF6C61F9052}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4168C9CF-C083-3FCD-AD43-FBF6C61F9052}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4168C9CF-C083-3FCD-AD43-FBF6C61F9052}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{42C2A14C-658C-3F9A-917D-B24D5B4CBF1B}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_COLOR" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{42C2A14C-658C-3F9A-917D-B24D5B4CBF1B}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{42C2A14C-658C-3F9A-917D-B24D5B4CBF1B}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{42C2A14C-658C-3F9A-917D-B24D5B4CBF1B}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4552A76B-1432-3475-849A-E50EE394FBAD}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4552A76B-1432-3475-849A-E50EE394FBAD}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4552A76B-1432-3475-849A-E50EE394FBAD}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4552A76B-1432-3475-849A-E50EE394FBAD}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4884C5E8-B495-3017-A69F-E38CB61A846A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTargetKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4884C5E8-B495-3017-A69F-E38CB61A846A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4884C5E8-B495-3017-A69F-E38CB61A846A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{4884C5E8-B495-3017-A69F-E38CB61A846A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{48EB7AEF-093F-3B85-8B3D-EB6909CC0B67}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_POINTER_EVENT_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{48EB7AEF-093F-3B85-8B3D-EB6909CC0B67}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{48EB7AEF-093F-3B85-8B3D-EB6909CC0B67}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{48EB7AEF-093F-3B85-8B3D-EB6909CC0B67}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5098373D-C1A2-337E-B0D5-87AD5D26FE2E}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_WEB_RESOURCE_CONTEXT" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5098373D-C1A2-337E-B0D5-87AD5D26FE2E}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5098373D-C1A2-337E-B0D5-87AD5D26FE2E}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5098373D-C1A2-337E-B0D5-87AD5D26FE2E}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52CB80AC-703D-3A16-9BE2-CF7A16FB5BF4}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_BROWSING_DATA_KINDS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52CB80AC-703D-3A16-9BE2-CF7A16FB5BF4}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52CB80AC-703D-3A16-9BE2-CF7A16FB5BF4}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52CB80AC-703D-3A16-9BE2-CF7A16FB5BF4}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52E58904-8ECE-3ABE-AFEE-4FE81962FFF3}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PrintStatus" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52E58904-8ECE-3ABE-AFEE-4FE81962FFF3}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52E58904-8ECE-3ABE-AFEE-4FE81962FFF3}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{52E58904-8ECE-3ABE-AFEE-4FE81962FFF3}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{54CCAA15-493C-36AA-BD16-5162863C052F}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PROCESS_FAILED_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{54CCAA15-493C-36AA-BD16-5162863C052F}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{54CCAA15-493C-36AA-BD16-5162863C052F}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{54CCAA15-493C-36AA-BD16-5162863C052F}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5730F2E2-B03A-3E4F-9B50-60AB6AB64E56}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ScrollbarStyle" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5730F2E2-B03A-3E4F-9B50-60AB6AB64E56}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5730F2E2-B03A-3E4F-9B50-60AB6AB64E56}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5730F2E2-B03A-3E4F-9B50-60AB6AB64E56}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5B20B6EE-BB85-31E7-A36F-ABBCC9CDB01E}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2FileSystemHandleKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5B20B6EE-BB85-31E7-A36F-ABBCC9CDB01E}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5B20B6EE-BB85-31E7-A36F-ABBCC9CDB01E}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5B20B6EE-BB85-31E7-A36F-ABBCC9CDB01E}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5CF115B3-DBFE-3718-AD69-DCF3B4D95513}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2DownloadInterruptReason" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5CF115B3-DBFE-3718-AD69-DCF3B4D95513}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5CF115B3-DBFE-3718-AD69-DCF3B4D95513}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{5CF115B3-DBFE-3718-AD69-DCF3B4D95513}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6170C1F8-FD25-36B5-B070-DA576F1A43A8}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Dispatchcontainerscriptbehavior" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6170C1F8-FD25-36B5-B070-DA576F1A43A8}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6170C1F8-FD25-36B5-B070-DA576F1A43A8}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6170C1F8-FD25-36B5-B070-DA576F1A43A8}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{65F7964C-7D70-3CA3-9E17-171147A08826}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_BOUNDS_MODE" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{65F7964C-7D70-3CA3-9E17-171147A08826}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{65F7964C-7D70-3CA3-9E17-171147A08826}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{65F7964C-7D70-3CA3-9E17-171147A08826}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{66FC6F24-5C0A-3AD8-BFC7-4155B716911A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2FrameKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{66FC6F24-5C0A-3AD8-BFC7-4155B716911A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{66FC6F24-5C0A-3AD8-BFC7-4155B716911A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{66FC6F24-5C0A-3AD8-BFC7-4155B716911A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6C4B3181-83EB-3412-87AD-D27A20A9225A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_SAVE_AS_UI_RESULT" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6C4B3181-83EB-3412-87AD-D27A20A9225A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6C4B3181-83EB-3412-87AD-D27A20A9225A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{6C4B3181-83EB-3412-87AD-D27A20A9225A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7191479D-914F-3C5C-98D9-20C8D26C53C6}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2CookieSameSiteKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7191479D-914F-3C5C-98D9-20C8D26C53C6}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7191479D-914F-3C5C-98D9-20C8D26C53C6}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7191479D-914F-3C5C-98D9-20C8D26C53C6}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{71F4E601-4FF9-3651-B0CC-84297B84B30D}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2DownloadState" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{71F4E601-4FF9-3651-B0CC-84297B84B30D}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{71F4E601-4FF9-3651-B0CC-84297B84B30D}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{71F4E601-4FF9-3651-B0CC-84297B84B30D}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7292A812-8D66-351C-A878-5D89FC3A97B5}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7292A812-8D66-351C-A878-5D89FC3A97B5}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7292A812-8D66-351C-A878-5D89FC3A97B5}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7292A812-8D66-351C-A878-5D89FC3A97B5}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7353A5E4-55B1-3448-B459-E3C3EC239397}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_DOWNLOAD_STATE" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7353A5E4-55B1-3448-B459-E3C3EC239397}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7353A5E4-55B1-3448-B459-E3C3EC239397}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7353A5E4-55B1-3448-B459-E3C3EC239397}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{773C95ED-D578-32EA-8875-4E1D37C1A311}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PRINT_COLOR_MODE" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{773C95ED-D578-32EA-8875-4E1D37C1A311}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{773C95ED-D578-32EA-8875-4E1D37C1A311}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{773C95ED-D578-32EA-8875-4E1D37C1A311}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{778783E6-A7B6-3383-9FAE-1CA1D59C1ACE}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_SCROLLBAR_STYLE" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{778783E6-A7B6-3383-9FAE-1CA1D59C1ACE}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{778783E6-A7B6-3383-9FAE-1CA1D59C1ACE}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{778783E6-A7B6-3383-9FAE-1CA1D59C1ACE}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{789AB2CF-EB33-378C-9543-237805E71DAC}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{789AB2CF-EB33-378C-9543-237805E71DAC}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{789AB2CF-EB33-378C-9543-237805E71DAC}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{789AB2CF-EB33-378C-9543-237805E71DAC}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{78A0EC55-072E-3BCC-AF23-C44A91864F4B}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PERMISSION_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{78A0EC55-072E-3BCC-AF23-C44A91864F4B}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{78A0EC55-072E-3BCC-AF23-C44A91864F4B}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{78A0EC55-072E-3BCC-AF23-C44A91864F4B}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7AC5C82F-2091-36DD-819F-D97D0F40F087}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PRINT_COLLATION" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7AC5C82F-2091-36DD-819F-D97D0F40F087}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7AC5C82F-2091-36DD-819F-D97D0F40F087}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{7AC5C82F-2091-36DD-819F-D97D0F40F087}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{83814829-FD01-3CD8-9764-5C9A27136270}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_SHARED_BUFFER_ACCESS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{83814829-FD01-3CD8-9764-5C9A27136270}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{83814829-FD01-3CD8-9764-5C9A27136270}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{83814829-FD01-3CD8-9764-5C9A27136270}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{84CF2C60-3700-360C-8DC0-7E1FA9B3D1E0}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2MemoryUsageTargetLevel" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{84CF2C60-3700-360C-8DC0-7E1FA9B3D1E0}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{84CF2C60-3700-360C-8DC0-7E1FA9B3D1E0}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{84CF2C60-3700-360C-8DC0-7E1FA9B3D1E0}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8A2DCE79-428D-3FB7-B9CF-455513B79A2B}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.tagRECT" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8A2DCE79-428D-3FB7-B9CF-455513B79A2B}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8A2DCE79-428D-3FB7-B9CF-455513B79A2B}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8A2DCE79-428D-3FB7-B9CF-455513B79A2B}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AD26BAA-90E2-377C-8AFB-ABD0C3FBB05A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2TrackingPreventionLevel" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AD26BAA-90E2-377C-8AFB-ABD0C3FBB05A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AD26BAA-90E2-377C-8AFB-ABD0C3FBB05A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AD26BAA-90E2-377C-8AFB-ABD0C3FBB05A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AEA3B47-01EC-327F-8B22-68D7DEF1E02B}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ProcessKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AEA3B47-01EC-327F-8B22-68D7DEF1E02B}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AEA3B47-01EC-327F-8B22-68D7DEF1E02B}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8AEA3B47-01EC-327F-8B22-68D7DEF1E02B}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8CEFF52B-9E0B-3278-A824-C9D057B26C4B}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PointerEventKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8CEFF52B-9E0B-3278-A824-C9D057B26C4B}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8CEFF52B-9E0B-3278-A824-C9D057B26C4B}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8CEFF52B-9E0B-3278-A824-C9D057B26C4B}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8E31A8C4-B745-3006-AA55-86424663A67A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2SaveAsKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8E31A8C4-B745-3006-AA55-86424663A67A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8E31A8C4-B745-3006-AA55-86424663A67A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8E31A8C4-B745-3006-AA55-86424663A67A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8F216A52-343F-3AE0-A8D2-07EBF4DBBAF3}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ChannelSearchKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8F216A52-343F-3AE0-A8D2-07EBF4DBBAF3}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8F216A52-343F-3AE0-A8D2-07EBF4DBBAF3}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{8F216A52-343F-3AE0-A8D2-07EBF4DBBAF3}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{90A9832C-73E1-349B-B22F-0938B046D9D6}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PermissionState" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{90A9832C-73E1-349B-B22F-0938B046D9D6}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{90A9832C-73E1-349B-B22F-0938B046D9D6}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{90A9832C-73E1-349B-B22F-0938B046D9D6}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{95BC7D71-96AD-367E-8FA6-72DDDABA66D0}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PREFERRED_COLOR_SCHEME" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{95BC7D71-96AD-367E-8FA6-72DDDABA66D0}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{95BC7D71-96AD-367E-8FA6-72DDDABA66D0}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{95BC7D71-96AD-367E-8FA6-72DDDABA66D0}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9AE15684-8099-3D66-8D1C-5EB48E27F030}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PreferredColorScheme" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9AE15684-8099-3D66-8D1C-5EB48E27F030}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9AE15684-8099-3D66-8D1C-5EB48E27F030}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9AE15684-8099-3D66-8D1C-5EB48E27F030}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9B4821D8-72AA-3DB2-8063-8567C694FB09}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2BoundsMode" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9B4821D8-72AA-3DB2-8063-8567C694FB09}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9B4821D8-72AA-3DB2-8063-8567C694FB09}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9B4821D8-72AA-3DB2-8063-8567C694FB09}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9F9E8C03-6D1D-3B2D-A46C-0D724A5D1B34}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2TextDirectionKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9F9E8C03-6D1D-3B2D-A46C-0D724A5D1B34}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9F9E8C03-6D1D-3B2D-A46C-0D724A5D1B34}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{9F9E8C03-6D1D-3B2D-A46C-0D724A5D1B34}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{A3B2F448-9EC3-3AEE-831A-E830ADE2A1A7}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_TEXT_DIRECTION_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{A3B2F448-9EC3-3AEE-831A-E830ADE2A1A7}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{A3B2F448-9EC3-3AEE-831A-E830ADE2A1A7}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{A3B2F448-9EC3-3AEE-831A-E830ADE2A1A7}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ACE55222-BBAF-37F5-A423-C9AB8D396166}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PROCESS_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ACE55222-BBAF-37F5-A423-C9AB8D396166}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ACE55222-BBAF-37F5-A423-C9AB8D396166}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ACE55222-BBAF-37F5-A423-C9AB8D396166}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B410F58F-838A-391F-84D6-9F5619C13178}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PrintColorMode" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B410F58F-838A-391F-84D6-9F5619C13178}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B410F58F-838A-391F-84D6-9F5619C13178}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B410F58F-838A-391F-84D6-9F5619C13178}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B49B140F-95FC-3326-9461-B6F858E6937C}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItemKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B49B140F-95FC-3326-9461-B6F858E6937C}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B49B140F-95FC-3326-9461-B6F858E6937C}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B49B140F-95FC-3326-9461-B6F858E6937C}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B5AF014C-B0D2-3825-8C6A-0EE3A3B13E67}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B5AF014C-B0D2-3825-8C6A-0EE3A3B13E67}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B5AF014C-B0D2-3825-8C6A-0EE3A3B13E67}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B5AF014C-B0D2-3825-8C6A-0EE3A3B13E67}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B6B4CC6C-4C65-3ADF-87CD-F87492EFCC2E}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_FAVICON_IMAGE_FORMAT" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B6B4CC6C-4C65-3ADF-87CD-F87492EFCC2E}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B6B4CC6C-4C65-3ADF-87CD-F87492EFCC2E}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B6B4CC6C-4C65-3ADF-87CD-F87492EFCC2E}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B907DE83-BADD-319B-AD70-1D11BE2B6569}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_NON_CLIENT_REGION_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B907DE83-BADD-319B-AD70-1D11BE2B6569}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B907DE83-BADD-319B-AD70-1D11BE2B6569}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B907DE83-BADD-319B-AD70-1D11BE2B6569}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B983FFDC-953A-3EAA-AE11-A84DD410A11D}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B983FFDC-953A-3EAA-AE11-A84DD410A11D}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B983FFDC-953A-3EAA-AE11-A84DD410A11D}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{B983FFDC-953A-3EAA-AE11-A84DD410A11D}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BA5E1860-BB8C-3B4A-8B99-0DBC54D8914F}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BA5E1860-BB8C-3B4A-8B99-0DBC54D8914F}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BA5E1860-BB8C-3B4A-8B99-0DBC54D8914F}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BA5E1860-BB8C-3B4A-8B99-0DBC54D8914F}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BD354D4E-DE42-3431-907A-A331086A0598}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PROCESS_FAILED_REASON" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BD354D4E-DE42-3431-907A-A331086A0598}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BD354D4E-DE42-3431-907A-A331086A0598}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{BD354D4E-DE42-3431-907A-A331086A0598}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C03F7B5F-C7CA-39C6-96DD-CDE9BA12A1B9}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PdfToolbarItems" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C03F7B5F-C7CA-39C6-96DD-CDE9BA12A1B9}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C03F7B5F-C7CA-39C6-96DD-CDE9BA12A1B9}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C03F7B5F-C7CA-39C6-96DD-CDE9BA12A1B9}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C3AFADF4-DD47-32FF-9B18-85140BCD603A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2FaviconImageFormat" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C3AFADF4-DD47-32FF-9B18-85140BCD603A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C3AFADF4-DD47-32FF-9B18-85140BCD603A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C3AFADF4-DD47-32FF-9B18-85140BCD603A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5113F6F-49FB-38FC-B3D2-B449F6FE4D9C}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2KeyEventKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5113F6F-49FB-38FC-B3D2-B449F6FE4D9C}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5113F6F-49FB-38FC-B3D2-B449F6FE4D9C}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5113F6F-49FB-38FC-B3D2-B449F6FE4D9C}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5DE938C-3004-3C95-8E20-6FC936972CDC}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2DefaultDownloadDialogCornerAlignment" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5DE938C-3004-3C95-8E20-6FC936972CDC}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5DE938C-3004-3C95-8E20-6FC936972CDC}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C5DE938C-3004-3C95-8E20-6FC936972CDC}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6519AA7-F9CE-3DE4-A869-9DC85188FC94}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2Color" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6519AA7-F9CE-3DE4-A869-9DC85188FC94}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6519AA7-F9CE-3DE4-A869-9DC85188FC94}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6519AA7-F9CE-3DE4-A869-9DC85188FC94}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6864BE4-2165-3CC9-87B6-384D34B517A3}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6864BE4-2165-3CC9-87B6-384D34B517A3}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6864BE4-2165-3CC9-87B6-384D34B517A3}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C6864BE4-2165-3CC9-87B6-384D34B517A3}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C7F2FE04-8305-3DB0-A831-3F9D72DC881D}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PrintDuplex" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C7F2FE04-8305-3DB0-A831-3F9D72DC881D}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C7F2FE04-8305-3DB0-A831-3F9D72DC881D}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{C7F2FE04-8305-3DB0-A831-3F9D72DC881D}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CAF5222E-AA4A-3111-8365-7E9FA2AC6ED4}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_FILE_SYSTEM_HANDLE_PERMISSION" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CAF5222E-AA4A-3111-8365-7E9FA2AC6ED4}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CAF5222E-AA4A-3111-8365-7E9FA2AC6ED4}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CAF5222E-AA4A-3111-8365-7E9FA2AC6ED4}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CDE83F51-D48F-3092-873E-CF34920D4A96}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2WebResourceContext" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CDE83F51-D48F-3092-873E-CF34920D4A96}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CDE83F51-D48F-3092-873E-CF34920D4A96}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{CDE83F51-D48F-3092-873E-CF34920D4A96}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D4F31890-3689-3ACA-AEAE-3DEF3FC89589}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_BROWSER_PROCESS_EXIT_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D4F31890-3689-3ACA-AEAE-3DEF3FC89589}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D4F31890-3689-3ACA-AEAE-3DEF3FC89589}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D4F31890-3689-3ACA-AEAE-3DEF3FC89589}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D811FE82-3D34-3AE3-9B4E-8EE7C0CE9CD7}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D811FE82-3D34-3AE3-9B4E-8EE7C0CE9CD7}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D811FE82-3D34-3AE3-9B4E-8EE7C0CE9CD7}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D811FE82-3D34-3AE3-9B4E-8EE7C0CE9CD7}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D989A872-4D1B-3F9B-BE67-C90D5F09D72A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_RELEASE_CHANNELS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D989A872-4D1B-3F9B-BE67-C90D5F09D72A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D989A872-4D1B-3F9B-BE67-C90D5F09D72A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D989A872-4D1B-3F9B-BE67-C90D5F09D72A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D9F843A6-E16F-3DF6-A348-BB8DF2F3B836}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_DOWNLOAD_INTERRUPT_REASON" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D9F843A6-E16F-3DF6-A348-BB8DF2F3B836}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D9F843A6-E16F-3DF6-A348-BB8DF2F3B836}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{D9F843A6-E16F-3DF6-A348-BB8DF2F3B836}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DA7BE459-35A0-3E53-8271-C92B47DE07AB}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_SERVER_CERTIFICATE_ERROR_ACTION" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DA7BE459-35A0-3E53-8271-C92B47DE07AB}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DA7BE459-35A0-3E53-8271-C92B47DE07AB}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DA7BE459-35A0-3E53-8271-C92B47DE07AB}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DD7D7684-7779-3913-8065-30D72ED6DA0B}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PhysicalKeyStatus" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DD7D7684-7779-3913-8065-30D72ED6DA0B}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DD7D7684-7779-3913-8065-30D72ED6DA0B}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DD7D7684-7779-3913-8065-30D72ED6DA0B}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DDE2F1BF-C390-3CEA-9D01-80F39EE58E88}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_SCRIPT_DIALOG_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DDE2F1BF-C390-3CEA-9D01-80F39EE58E88}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DDE2F1BF-C390-3CEA-9D01-80F39EE58E88}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{DDE2F1BF-C390-3CEA-9D01-80F39EE58E88}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E2126E9C-01F7-3C6D-A51C-2B84176A024D}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.tagPOINT" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E2126E9C-01F7-3C6D-A51C-2B84176A024D}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E2126E9C-01F7-3C6D-A51C-2B84176A024D}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E2126E9C-01F7-3C6D-A51C-2B84176A024D}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E6878328-6FA4-39D7-B68E-2D975BDEAD27}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedReason" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E6878328-6FA4-39D7-B68E-2D975BDEAD27}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E6878328-6FA4-39D7-B68E-2D975BDEAD27}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{E6878328-6FA4-39D7-B68E-2D975BDEAD27}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EAA3FEA6-C292-310A-9713-9B6FC7E45206}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2SharedBufferAccess" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EAA3FEA6-C292-310A-9713-9B6FC7E45206}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EAA3FEA6-C292-310A-9713-9B6FC7E45206}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EAA3FEA6-C292-310A-9713-9B6FC7E45206}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EB7151FD-256E-3D9D-A048-589E8F1FD55A}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2MouseEventVirtualKeys" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EB7151FD-256E-3D9D-A048-589E8F1FD55A}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EB7151FD-256E-3D9D-A048-589E8F1FD55A}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EB7151FD-256E-3D9D-A048-589E8F1FD55A}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EBB305C8-12F8-32F4-B07F-2FFCF25C8068}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EBB305C8-12F8-32F4-B07F-2FFCF25C8068}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EBB305C8-12F8-32F4-B07F-2FFCF25C8068}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EBB305C8-12F8-32F4-B07F-2FFCF25C8068}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ED141B19-41F4-3C09-857E-CF5D542585B9}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.CoreWebView2ReleaseChannels" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ED141B19-41F4-3C09-857E-CF5D542585B9}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ED141B19-41F4-3C09-857E-CF5D542585B9}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{ED141B19-41F4-3C09-857E-CF5D542585B9}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EFD5F456-B5A4-3E10-8248-87D25C5A4F37}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EFD5F456-B5A4-3E10-8248-87D25C5A4F37}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EFD5F456-B5A4-3E10-8248-87D25C5A4F37}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{EFD5F456-B5A4-3E10-8248-87D25C5A4F37}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F296B4B6-15B0-3C25-BBF7-068921804BF9}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PDF_TOOLBAR_ITEMS" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F296B4B6-15B0-3C25-BBF7-068921804BF9}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F296B4B6-15B0-3C25-BBF7-068921804BF9}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F296B4B6-15B0-3C25-BBF7-068921804BF9}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F6983F7C-61F6-3384-B694-2408144019E5}\1.0.2792.45" Name="Class" Value="Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_COOKIE_SAME_SITE_KIND" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F6983F7C-61F6-3384-B694-2408144019E5}\1.0.2792.45" Name="Assembly" Value="Microsoft.Web.WebView2.Core, Version=1.0.2792.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F6983F7C-61F6-3384-B694-2408144019E5}\1.0.2792.45" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+				<RegistryValue Root="HKCU" Key="Record\{F6983F7C-61F6-3384-B694-2408144019E5}\1.0.2792.45" Name="CodeBase" Value="file:///[#fili3RMWnaRy0FIakcE.PuhPZIWxY4]" Type="string" Action="write" />
+			</Component>
+			<Component Id="cmpG0irL8td44I24g2sDx.yT5uTC20" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="5343f143-b178-4aa2-89fe-bc5515dc2257">
+				<File Id="filrihz0E1J5L3XmpTvYjVofUpXZq0" KeyPath="yes" Source="SourceDir\Microsoft.Web.WebView2.Core.xml" />
+			</Component>
+			<Component Id="cmpBaG0B5RONg2tihX4sMcC2hsYAro" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="b171683c-3353-4d1a-9e03-482e1fac6a5f">
+				<File Id="filvr.I9i_wdVbelUIgvIJs.IHRIB0" KeyPath="yes" Source="SourceDir\Microsoft.Web.WebView2.WinForms.dll" />
+			</Component>
+			<Component Id="cmpK1hOa2P_4oNmkvmVXjeENb0aQqA" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="fc39d7d6-0122-44c5-a543-1743eb7b2318">
+				<File Id="filQZWWv6PwNOrPrR10kgxqCCZPu8Q" KeyPath="yes" Source="SourceDir\Microsoft.Web.WebView2.WinForms.xml" />
+			</Component>
+			<Component Id="cmpGwHWkB2emsCiwzomvKN0XwrSv7o" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="39c25950-e0ef-4f62-9d94-bac41c1727a4">
+				<File Id="fil3qpX1qYXwQhJvI81l2pv._y_yJU" KeyPath="yes" Source="SourceDir\Microsoft.Web.WebView2.Wpf.dll" />
+			</Component>
+			<Component Id="cmpUFzvIV9Aq2OA0ejHSdS2mYT4ecg" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="7b7f1bf1-122d-42d8-b350-30cc77c898c2">
+				<File Id="filmL21JFgDIHU52nqdBDHaPcIBPQ4" KeyPath="yes" Source="SourceDir\Microsoft.Web.WebView2.Wpf.xml" />
+			</Component>
+			<Component Id="cmprV5ITg0NqXfImtNiflmnPK5l8P8" Directory="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w" Guid="6a6d075f-5b82-4880-bdac-451683266596">
+				<File Id="filrAUdLuKb497K02J_mj4b4z7vsJw" KeyPath="yes" Source="SourceDir\Newtonsoft.Json.dll" />
+			</Component>
+			<Component Id="cmp9sftoNGiNYxpyxSWiV4ZZVqXrsE" Directory="dirJ9tUqm8opqqWqDrhTKnn9pXO21M" Guid="ad012715-693b-4637-95c5-e0ada6704fe1">
+				<File Id="filrhUz.9ESvDmpvnbovzPi4QYa8TU" KeyPath="yes" Source="SourceDir\runtimes\win-arm64\native\WebView2Loader.dll" />
+			</Component>
+			<Component Id="cmpLYMtsxhHOVmKIkV7hKaFMQZ76GE" Directory="diruQDJ.Fzx5.uqNB9RrzuJc0uRN2k" Guid="27749dd0-f9a7-4367-af33-45ac8d91b7ce">
+				<File Id="fil4lVm7ocVk.fiSOwfx0itWq9kIpE" KeyPath="yes" Source="SourceDir\runtimes\win-x64\native\WebView2Loader.dll" />
+			</Component>
+			<Component Id="cmpAPNbfaVymW1KyrQH9wX9CEiZfK8" Directory="dirO_C5IwD8KtRhYDB8sikASpGzwtY" Guid="44798297-6cd8-4cf3-9e1b-de3028e5fd3c">
+				<File Id="fil5t.xbc14zcHnTI0RaEl83458GUw" KeyPath="yes" Source="SourceDir\runtimes\win-x86\native\WebView2Loader.dll" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+	<Fragment>
+		<DirectoryRef Id="dirQGWpqtgxviUsG9Zy_HlVfkkuX6w">
+			<Directory Id="dir_D6RWHV18BxIbRP_1Qm384lLX0Y" Name="runtimes" />
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<DirectoryRef Id="dir_D6RWHV18BxIbRP_1Qm384lLX0Y">
+			<Directory Id="dirDrv1aHxGU2Cue8sOdoNCozmxX1g" Name="win-x64" />
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<DirectoryRef Id="dir_D6RWHV18BxIbRP_1Qm384lLX0Y">
+			<Directory Id="direxPDLfR.ARqm1q8ywuseO.W9BUI" Name="win-x86" />
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<DirectoryRef Id="dirNyHgk2ndhxoBLpkJdNZrhzJ80p4">
+			<Directory Id="dirJ9tUqm8opqqWqDrhTKnn9pXO21M" Name="native" />
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<DirectoryRef Id="dir_D6RWHV18BxIbRP_1Qm384lLX0Y">
+			<Directory Id="dirNyHgk2ndhxoBLpkJdNZrhzJ80p4" Name="win-arm64" />
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<DirectoryRef Id="direxPDLfR.ARqm1q8ywuseO.W9BUI">
+			<Directory Id="dirO_C5IwD8KtRhYDB8sikASpGzwtY" Name="native" />
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<DirectoryRef Id="dirDrv1aHxGU2Cue8sOdoNCozmxX1g">
+			<Directory Id="diruQDJ.Fzx5.uqNB9RrzuJc0uRN2k" Name="native" />
+		</DirectoryRef>
+	</Fragment>
+</Wix>

@@ -34,7 +34,7 @@ public static class WinApi
 
     private const int WM_SHOW_WINDOW = SingleInstanceEnforcer.WM_SHOW_WINDOW;
 
-    public static void SnapWindowRight(Window window)
+    public static void SnapWindowRight(Window window, bool hide = false)
     {
         IsSnappingWindow = true;
 
@@ -49,7 +49,11 @@ public static class WinApi
         window.Dispatcher.Invoke(() =>
         {
             WindowSnapped?.Invoke();
-            window.Activate();
+
+            if (hide)
+                window.Hide();
+            else
+                window.Activate();
         });
 
         Thread.Sleep(500);

@@ -32,7 +32,10 @@ public partial class MainWindow
         {
             Show();
             Activate();
-            Task.Run(() => WinApi.SnapWindowRight(this));
+
+            string[] args = Environment.GetCommandLineArgs();
+            bool shouldHide = args.Length > 1 && args[1] == "-hidden";
+            Task.Run(() => WinApi.SnapWindowRight(this, shouldHide));
         };
 
         WinApi.WindowSnapped += WindowSnapped;

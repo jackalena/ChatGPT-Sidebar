@@ -59,109 +59,110 @@
         </ContextMenu>
     </Window.Resources>
 
-    <Border
-        Background="{DynamicResource BackgroundBrush}"
-        BorderBrush="{StaticResource BorderBrush}"
-        BorderThickness="1,0,0,0">
+    <Grid>
+        <Border
+            Background="{DynamicResource BackgroundBrush}"
+            BorderBrush="{StaticResource BorderBrush}"
+            BorderThickness="1,0,0,0">
 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="36" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="36" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
 
-            <Border
-                Grid.Row="0"
-                BorderBrush="{StaticResource BorderBrush}"
-                BorderThickness="0,0,0,1">
-                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Border
+                    Grid.Row="0"
+                    BorderBrush="{StaticResource BorderBrush}"
+                    BorderThickness="0,0,0,1">
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
 
-                    <StackPanel
-                        Grid.Column="2"
-                        HorizontalAlignment="Right"
-                        VerticalAlignment="Stretch"
-                        Orientation="Horizontal">
-                        <Button
-                            x:Name="BackButton"
-                            Width="40"
-                            Margin="4"
+                        <StackPanel
+                            Grid.Column="2"
+                            HorizontalAlignment="Right"
                             VerticalAlignment="Stretch"
-                            Click="BackButton_OnClick"
-                            Content="&#xE72B;"
-                            FontFamily="Segoe MDL2 Assets"
-                            FontSize="13"
-                            IsEnabled="False" />
-                        <Button
-                            x:Name="ForwardButton"
-                            Width="40"
-                            Margin="4"
+                            Orientation="Horizontal">
+                            <Button
+                                x:Name="BackButton"
+                                Width="40"
+                                Margin="4"
+                                VerticalAlignment="Stretch"
+                                Click="BackButton_OnClick"
+                                Content="&#xE72B;"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="13"
+                                IsEnabled="False" />
+                            <Button
+                                x:Name="ForwardButton"
+                                Width="40"
+                                Margin="4"
+                                VerticalAlignment="Stretch"
+                                Click="ForwardButton_OnClick"
+                                Content="&#xE72A;"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="13"
+                                IsEnabled="False" />
+                            <Button
+                                Width="40"
+                                Margin="4"
+                                VerticalAlignment="Stretch"
+                                Click="CloseButton_Click"
+                                Content="&#xE711;"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="14"
+                                IsCancel="True"
+                                IsHitTestVisible="True" />
+                        </StackPanel>
+
+                        <ComboBox
+                            x:Name="ChatTypeComboBox"
+                            Grid.Column="0"
+                            Margin="28,4,4,4"
+                            HorizontalAlignment="Center"
                             VerticalAlignment="Stretch"
-                            Click="ForwardButton_OnClick"
-                            Content="&#xE72A;"
-                            FontFamily="Segoe MDL2 Assets"
-                            FontSize="13"
-                            IsEnabled="False" />
-                        <Button
-                            Width="40"
-                            Margin="4"
-                            VerticalAlignment="Stretch"
-                            Click="CloseButton_Click"
-                            Content="&#xE711;"
-                            FontFamily="Segoe MDL2 Assets"
                             FontSize="14"
-                            IsCancel="True"
-                            IsHitTestVisible="True" />
-                    </StackPanel>
+                            IsEditable="False" />
 
-                    <ComboBox
-                        x:Name="ChatTypeComboBox"
-                        Grid.Column="0"
-                        Margin="28,4,4,4"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Stretch"
-                        FontSize="14"
-                        IsEditable="False" />
-
-                    <StackPanel
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Stretch"
-                        Orientation="Horizontal">
-                        <Button
-                            Width="40"
-                            Margin="4"
+                        <StackPanel
                             HorizontalAlignment="Left"
                             VerticalAlignment="Stretch"
-                            Click="MenuButton_OnClick"
-                            Content="&#xE712;"
-                            FontFamily="Segoe MDL2 Assets"
-                            FontSize="14">
-                            <Button.ContextMenu>
-                                <ContextMenu
-                                    x:Name="MenuDropdown"
-                                    BorderThickness="0"
-                                    ItemContainerStyle="{StaticResource MenuItemStyle}">
+                            Orientation="Horizontal">
+                            <Button
+                                Width="40"
+                                Margin="4"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Stretch"
+                                Click="MenuButton_OnClick"
+                                Content="&#xE712;"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="14">
+                                <Button.ContextMenu>
+                                    <ContextMenu
+                                        x:Name="MenuDropdown"
+                                        BorderThickness="0"
+                                        ItemContainerStyle="{StaticResource MenuItemStyle}">
 
-                                    <MenuItem
-                                        Click="ReloadButton_OnClick"
-                                        FontFamily="Segoe UI"
-                                        Header="Reload">
-                                        <MenuItem.Icon>
-                                            <TextBlock
-                                                HorizontalAlignment="Center"
-                                                VerticalAlignment="Center"
-                                                FontFamily="Segoe MDL2 Assets"
-                                                FontSize="12"
-                                                Text="&#xE72C;" />
-                                        </MenuItem.Icon>
-                                    </MenuItem>
+                                        <MenuItem
+                                            Click="ReloadButton_OnClick"
+                                            FontFamily="Segoe UI"
+                                            Header="Reload">
+                                            <MenuItem.Icon>
+                                                <TextBlock
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    FontFamily="Segoe MDL2 Assets"
+                                                    FontSize="12"
+                                                    Text="&#xE72C;" />
+                                            </MenuItem.Icon>
+                                        </MenuItem>
 
-                                    <!--<MenuItem
+                                        <!--<MenuItem
                                         Click="SettingsButton_OnClick"
                                         FontFamily="Segoe UI"
                                         Header="Settings">
@@ -175,48 +176,47 @@
                                         </MenuItem.Icon>
                                     </MenuItem>-->
 
-                                    <MenuItem
-                                        Click="ExitButton_OnClick"
-                                        FontFamily="Segoe UI"
-                                        Header="Exit">
-                                        <MenuItem.Icon>
-                                            <TextBlock
-                                                HorizontalAlignment="Center"
-                                                VerticalAlignment="Center"
-                                                FontFamily="Segoe MDL2 Assets"
-                                                FontSize="14"
-                                                Text="&#xF3B1;" />
-                                        </MenuItem.Icon>
-                                    </MenuItem>
+                                        <MenuItem
+                                            Click="ExitButton_OnClick"
+                                            FontFamily="Segoe UI"
+                                            Header="Exit">
+                                            <MenuItem.Icon>
+                                                <TextBlock
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    FontFamily="Segoe MDL2 Assets"
+                                                    FontSize="14"
+                                                    Text="&#xF3B1;" />
+                                            </MenuItem.Icon>
+                                        </MenuItem>
 
-                                </ContextMenu>
-                            </Button.ContextMenu>
-                        </Button>
+                                    </ContextMenu>
+                                </Button.ContextMenu>
+                            </Button>
 
-                        <Button
-                            Width="40"
-                            Margin="4"
-                            VerticalAlignment="Stretch"
-                            Click="HomeButton_OnClick"
-                            Content="&#xE80F;"
-                            FontFamily="Segoe MDL2 Assets"
-                            FontSize="16" />
-                    </StackPanel>
+                            <Button
+                                Width="40"
+                                Margin="4"
+                                VerticalAlignment="Stretch"
+                                Click="HomeButton_OnClick"
+                                Content="&#xE80F;"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="16" />
+                        </StackPanel>
+                    </Grid>
+                </Border>
 
+                <tb:TaskbarIcon
+                    x:Name="TrayIcon"
+                    ContextMenu="{StaticResource TrayIconContextMenu}"
+                    MenuActivation="LeftOrRightClick"
+                    ToolTipText="ChatGPT Sidebar"
+                    TrayMouseDoubleClick="ShowButton_OnClick"
+                    Visibility="Visible" />
 
-                </Grid>
-            </Border>
+                <wpf:WebView2 x:Name="WebView" Grid.Row="1" />
 
-            <tb:TaskbarIcon
-                x:Name="TrayIcon"
-                ContextMenu="{StaticResource TrayIconContextMenu}"
-                MenuActivation="LeftOrRightClick"
-                ToolTipText="ChatGPT Sidebar"
-                TrayMouseDoubleClick="ShowButton_OnClick"
-                Visibility="Visible" />
-
-            <wpf:WebView2 x:Name="WebView" Grid.Row="1" />
-
-        </Grid>
-    </Border>
+            </Grid>
+        </Border>
+    </Grid>
 </Window>

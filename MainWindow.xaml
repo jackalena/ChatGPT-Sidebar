@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:tb="http://www.hardcodet.net/taskbar"
     xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
-    Title="MainWindow"
+    Title="ChatGPT Sidebar"
     Width="800"
     Height="450"
     AllowsTransparency="True"

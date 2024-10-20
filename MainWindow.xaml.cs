@@ -1,9 +1,9 @@
 ﻿using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
+using System.Windows.Interop;
 using System.Windows.Media;
 
 using ChatGPTSidebar.Config;
@@ -25,6 +25,8 @@ public partial class MainWindow
         InitializeComponent();
         WebView.BeginInit();
 
+        Loaded += MainWindow_Loaded;
+
         MoveToSide();
         ContentRendered += (_, _) =>
         {
@@ -32,7 +34,13 @@ public partial class MainWindow
             Activate();
             Task.Run(() => WinApi.SnapWindowRight(this));
         };
+
         WinApi.WindowSnapped += WindowSnapped;
+        WinApi.RecievedShowMsg += () =>
+        {
+            Show();
+            Activate();
+        };
 
         ChatTypeComboBox.ItemsSource = WebViewSourceManager.Sources;
         ChatTypeComboBox.SelectedIndex = Settings.Current.WebViewSource;
@@ -42,6 +50,32 @@ public partial class MainWindow
         WebView.Source = WebViewSourceManager.CurrentSource.Uri;
 
         _ = InitialiseWebViewAsync();
+    }
+
+    private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+    {
+        WindowInteropHelper helper = new(this);
+        HwndSource? source = HwndSource.FromHwnd(helper.Handle);
+
+        source.AddHook(WinApi.HwndHook);
+
+        WinApi.RegisterHotkeys(source.Handle);
+
+        WinApi.HotkeyPressed += WinApi_HotkeyPressed;
+    }
+
+    private void WinApi_HotkeyPressed()
+    {
+        if (IsActive)
+        {
+            _ = Settings.SaveAsync();
+            Hide();
+        }
+        else
+        {
+            if (!IsVisible) Show();
+            Activate();
+        }
     }
 
     private async Task InitialiseWebViewAsync()
@@ -153,6 +187,11 @@ public partial class MainWindow
 
     private void ExitButton_OnClick(object sender, RoutedEventArgs e)
     {
+        Hide();
+
+        WindowInteropHelper helper = new(this);
+        WinApi.UnregisterHotkeys(helper.Handle);
+
         Application.Current.Shutdown();
     }
 
